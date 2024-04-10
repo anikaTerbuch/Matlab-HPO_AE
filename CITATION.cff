@@ -1,22 +1,3 @@
 cff-version: 1.2.0
 message: "If you are using this entry to describe a paper, please note that CFF is primarily used for software metadata."
 title: "Detecting Anomalous Multivariate Time-Series via Hybrid Machine Learning"
-authors:
-  - family-names: "Terbuch"
-    given-names: "Anika"
-  - family-names: "O'Leary"
-    given-names: "Paul"
-  - family-names: "Khalili-Motlagh-Kasmaei"
-    given-names: "Negin"
-  - family-names: "Auer"
-    given-names: "Peter"
-  - family-names: "Zöhrer"
-    given-names: "Alexander"
-  - family-names: "Winter"
-    given-names: "Vincent"
-year: 2023
-type: article
-journal: "IEEE Transactions on Instrumentation and Measurement"
-volume: "72"
-pages: "1-11"
-doi: "10.1109/TIM.2023.3236354"
