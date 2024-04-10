@@ -11,17 +11,4 @@ url: "https://github.com/anikaTerbuch/Matlab-HPO_AE"
 preferred-citation:
   type: article
   journal: "IEEE Transactions on Instrumentation and Measurement"
-  authors:
-    - family-names: "Terbuch"
-      given-names: "Anika"
-    - family-names: "O’Leary"
-      given-names: "Paul"
-    - family-names: "Khalili-Motlagh-Kasmaei"
-      given-names: "Negin"
-    - family-names: "Auer"
-      given-names: "Peter"
-    - family-names: "Zöhrer"
-      given-names: "Alexander"
-    - family-names: "Winter"
-      given-names: "Vincent"
 
