@@ -19,22 +19,24 @@ preferred-citation:
     orcid: "https://orcid.org/0000-0002-1367-8270"
   - family-names: "Khalili-Motlagh-Kasmaei"
     given-names: "Negin"
+    orcid: "https://orcid.org/0000-0002-1811-5266"
   - family-names: "Auer"
     given-names: "Peter"
     orcid: "https://orcid.org/0000-0001-8385-9635"	
-    orcid: "https://orcid.org/0000-0002-1811-5266"
-  - family-names: "Khalili-Motlagh-Kasmaei"
-    given-names: "Negin"
-    orcid: "https://orcid.org/0000-0002-1811-5266"
-  doi: "10.0000/00000"
-  journal: "Journal Title"
-  month: 9
+  - family-names: "Zoehrer"
+    given-names: "Alexander"
+    orcid: "https://orcid.org/0000-0002-5212-4908"
+  - family-names: "Winter"
+    given-names: "Vincent"
+    orcid: "https://ieeexplore.ieee.org/author/37089695180"
+  doi: "10.1109/TIM.2023.3236354"
+  journal: " IEEE Transactions on Instrumentation and Measurement"
+  month: 1
   start: 1 # First page number
-  end: 10 # Last page number
-  title: "My awesome research software"
-  issue: 1
-  volume: 1
-  year: 2021
+  end: 11 # Last page number
+  title: "Detecting Anomalous Multivariate Time-Series via Hybrid Machine Learning"
+  volume: 72
+  year: 2023
 
 
 
