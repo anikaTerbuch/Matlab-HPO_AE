@@ -1,0 +1,103 @@
+This toolbox enables hyperparameter optimization for autoencoders using a genetic algorithm.
+This framework extends the framework "Generic Deep Autoencoder for Time-Series" by providing an algorithm for hyperparameter optimization based on a genetic algorithm. 
+
+The primary focus is on the hyperparameter optimization for autoencoders used for multi-channel time-series analysis 
+using a meta-heuristic, a genetic algorithm.
+
+In most of the available literature, the optimization problem is formulated as a maximization problem - 
+a lower fitness is considered to be better. 
+However, in Matlab, it is formulated as a minimization problem. 
+Since each minimization problem can be formulated as a maximization problem and vice versa this is only a matter of definition.
+In this toolbox, analogous to Matlabs implementation: the genetic algorithm is used to find an individual which minimizes the fitness function (https://de.mathworks.com/help/gads/ga.html).
+
+This toolbox enables hyperparameter optimization for autoencoders using a genetic algorithm created with the toolbox
+"Generic Deep Autoencoder for Time-Series" which is also included in this framework.
+
+The goal of the optimization is to tailor the hyperparameters of the autoencoder-architecutre chosen and the data it is applied on
+to ensure a good and stable performance of the ML-architecutre.
+
+Each optimization is performed for a defined number of generations and each hyperparameter setting three autoencoders 
+are trained to get a better estimate of the performance of the architecture on different folds of the data.
+
+For more information on the autoencoder architecture itself refer to https://de.mathworks.com/matlabcentral/fileexchange/111110-generic-deep-autoencoder-for-time-series
+
+For the hyperparameter optimization, a genetic algorithm combining two crossover operators for a better exploration of the search space is used.
+
+It is advised to run this optimization on dedicated ML-training infrastructure, or other comparable infrastructure, to reduce the runtime.
+
+Using this framework the following hyperparameters can be optimized:
+- Beta-KL-Divergence (when beta-VAEs are used)
+- LearningRate
+- MiniBatchSize
+- NeuronsDecoder (also for multiple layers)
+- NeuronsEncoder (also for multiple layers)
+- NumberEpochs
+
+This toolbox consists of two parts
+- AutoencoderDeep: a framework for implementing generic autoencoders 
+- GA_AED: the genetic algorithm for the hyperparameter optimization of structures created with the class AutoencoderDeep.
+
+To set all the necessary paths to run this toolbox, please execute the script "Example_HyperparameterOptimization".
+
+---------------------------------------------------------------------
+This code can also be considered as supplemental Material to the Paper:
+
+"Detecting Anomalous Multivariate Time-Series via Hybrid Machine Learning"
+by Anika Terbuch, Paul O'Leary, Negin Khalili-Motlagh-Kasmaei, Peter Auer, Alexander Zöhrer and Vincent Winter
+published in January 2023
+
+This article investigates the use of hybrid machine
+learning (HML) for the detection of anomalous multivariate time series (MVTS). 
+Focusing on a specific industrial use case from
+geotechnical engineering, where hundreds of MVTS need to be
+analyzed and classified, has permitted extensive testing of the
+proposed methods with real measurement data. The novel hybrid
+anomaly detector combines two means for detection, creating
+redundancy and reducing the risk of missing defective elements
+in a safety-relevant application. The two parts are: 1) anomaly
+detection based on approximately 50 physics-motivated key performance 
+indicators (KPIs) and 2) an unsupervised variational
+autoencoder (VAE) with long short-term memory layers. The
+KPI captures expert knowledge on the properties of the data
+that infer the quality of produced elements; these are used as a
+type of auto-labeling. The goal of the extension using machine
+learning (ML) is to detect anomalies that the experts may not
+have foreseen. In contrast to anomaly detection in streaming data,
+where the goal is to locate an anomaly, each MVTS is complete in
+itself at the time of evaluation and is categorized as anomalous or
+nonanomalous. The article compares the performance of different
+VAE architectures [e.g., long short-term memory (LSTM-VAE)
+and bidirectional LSTM (BiLSTM-VAE)]. The results of using a
+genetic algorithm to optimize the hyperparameters of the different 
+architectures are also presented. It is shown that modeling
+the industrial process as an assemblage of subprocesses yields
+a better discriminating power and permits the identification
+of interdependencies between the subprocesses. Interestingly,
+different autoencoder architectures may be optimal for different
+subprocesses; here two different architectures are combined to
+achieve superior performance. Extensive results are presented
+based on a very large set of real-time measurement data.
+
+cite as:
+@ARTICLE{10015855,
+  author={Terbuch, Anika and O’Leary, Paul and Khalili-Motlagh-Kasmaei, Negin and Auer, Peter and Zöhrer, Alexander and Winter, Vincent},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={Detecting Anomalous Multivariate Time-Series via Hybrid Machine Learning}, 
+  year={2023},
+  volume={72},
+  number={},
+  pages={1-11},
+  doi={10.1109/TIM.2023.3236354}}
+----------------------------------------------------------------------
+
+
+More information on the functionality of the hyperparameter optimization and the description of the framework can be found in the documents
+1) Premeable_GA: Short general introduction to genetic algorithms and hyperparameter optimization
+2) Intro_GA: Gives an introduction to the functionalities of the toolbox as well as algorithmic details and the syntax used
+3) Example_HyperparameterOptimization: Provides an example of the workflow to perform hyperparameter optimization on a dataset available from Matlab 2022a on.
+
+
+---------------------------------------------------------------------
+This implementation is primarily tailored to perform the hyperparameter for
+Autoencoders created with the toolbox "Generic Deep Autoencoder for Time-Series" previously published as:
+https://de.mathworks.com/matlabcentral/fileexchange/111110-generic-deep-autoencoder-for-time-series.
