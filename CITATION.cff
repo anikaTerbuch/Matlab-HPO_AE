@@ -1,3 +1,9 @@
 cff-version: 1.2.0
-message: "If you are using this entry to describe a paper, please note that CFF is primarily used for software metadata."
-title: "Detecting Anomalous Multivariate Time-Series via Hybrid Machine Learning"
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Terbuch"
+  given-names: "Anika"
+  orcid: "https://orcid.org/0000-0001-8699-1367"
+title: " Autoencoders for Time-Series with Hyperparameter Tuning "
+version: 1.1.2
+date-released: 2024-04-10
