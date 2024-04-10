@@ -9,6 +9,7 @@ The primary focus is on the hyperparameter optimization for autoencoders used fo
 using a meta-heuristic, a genetic algorithm.
 
 This toolbox is also mirrored to [MatlabFIleExchange](https://de.mathworks.com/matlabcentral/fileexchange/130944-autoencoders-for-time-series-with-hyperparameter-tuning)
+
 ---------------------------------------------------------------------
 # Example plot
 
