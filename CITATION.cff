@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you are using this entry to describe a paper, please note that CFF is primarily used for software metadata.
+message: "If you are using this entry to describe a paper, please note that CFF is primarily used for software metadata."
 title: "Detecting Anomalous Multivariate Time-Series via Hybrid Machine Learning"
 authors:
   - family-names: "Terbuch"
@@ -17,6 +17,6 @@ authors:
 year: 2023
 type: article
 journal: "IEEE Transactions on Instrumentation and Measurement"
-volume: 72
-pages: 1-11
+volume: "72"
+pages: "1-11"
 doi: "10.1109/TIM.2023.3236354"
